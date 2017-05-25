@@ -1,0 +1,7 @@
+services:
+  collection.factory.set:
+    class: Vainyl\Operation\Collection\Factory\SetCollectionFactory
+    arguments: ['@storage.prototype']
+  collection.factory.sequence:
+    class: Vainyl\Operation\Collection\Factory\SequenceCollectionFactory
+    arguments: ['@storage.prototype']
