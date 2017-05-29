@@ -16,11 +16,11 @@ use Vainyl\Operation\Collection\CollectionInterface;
 use Vainyl\Operation\Collection\Factory\CollectionFactoryInterface;
 
 /**
- * Class CollectionFactoryDecorator
+ * Class AbstractCollectionFactoryDecorator
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-abstract class CollectionFactoryDecorator implements CollectionFactoryInterface
+abstract class AbstractCollectionFactoryDecorator implements CollectionFactoryInterface
 {
     private $collectionFactory;
 

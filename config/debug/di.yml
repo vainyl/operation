@@ -1,2 +1,14 @@
 imports:
   - { resource: '../di.yml' }
+
+services:
+  collection.factory.set.logger:
+    decorates: collection.factory.set
+    decoration_priority: 100
+    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionDecoratorFactory
+    arguments: ['@collection.factory.set.logger', '@logger.operation']
+  collection.factory.sequence.logger:
+    decorates: collection.factory.sequence
+    decoration_priority: 100
+    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionDecoratorFactory
+    arguments: ['@collection.factory.sequence.logger', '@logger.operation']
