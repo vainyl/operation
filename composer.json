@@ -13,7 +13,7 @@
         }
     },
     "require": {
-        "vainyl/core": "dev-master"
+        "vainyl/core": "0.1.x-dev"
     },
     "repositories": [
         {
