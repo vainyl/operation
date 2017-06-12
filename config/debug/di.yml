@@ -5,10 +5,15 @@ services:
   collection.factory.set.logger:
     decorates: collection.factory.set
     decoration_priority: 100
-    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionDecoratorFactory
-    arguments: ['@collection.factory.set.logger', '@logger.operation']
+    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionFactoryDecorator
+    arguments: ['@collection.factory.set.logger.inner', '@logger.operation']
   collection.factory.sequence.logger:
     decorates: collection.factory.sequence
     decoration_priority: 100
-    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionDecoratorFactory
-    arguments: ['@collection.factory.sequence.logger', '@logger.operation']
+    class: Vainyl\Operation\Collection\Decorator\LoggerCollectionFactoryDecorator
+    arguments: ['@collection.factory.sequence.logger.inner', '@logger.operation']
+  operation.factory.logger:
+    decorates: operation.factory
+    decoration_priority: 100
+    class: Vainyl\Operation\Collection\Decorator\LoggerOperationFactoryDecorator
+    arguments: ['@operation.factory.logger.inner', '@logger.operation']
