@@ -9,3 +9,5 @@ services:
     synthetic: true
     tags:
       - {name: 'logger', channel: 'operation'}
+  operation.factory:
+    class: Vainyl\Operation\Factory\OperationFactory

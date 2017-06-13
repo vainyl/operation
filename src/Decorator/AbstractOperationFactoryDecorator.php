@@ -10,9 +10,9 @@
  */
 declare(strict_types=1);
 
-namespace Vainyl\Operation\Collection\Decorator;
+namespace Vainyl\Operation\Decorator;
 
-use Vainyl\Operation\Collection\Factory\OperationFactoryInterface;
+use Vainyl\Operation\Factory\OperationFactoryInterface;
 use Vainyl\Operation\OperationInterface;
 
 /**

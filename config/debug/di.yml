@@ -15,5 +15,5 @@ services:
   operation.factory.logger:
     decorates: operation.factory
     decoration_priority: 100
-    class: Vainyl\Operation\Collection\Decorator\LoggerOperationFactoryDecorator
+    class: Vainyl\Operation\Decorator\LoggerOperationFactoryDecorator
     arguments: ['@operation.factory.logger.inner', '@logger.operation']

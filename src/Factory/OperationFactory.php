@@ -10,7 +10,7 @@
  */
 declare(strict_types=1);
 
-namespace Vainyl\Operation\Collection\Factory;
+namespace Vainyl\Operation\Factory;
 
 use Vainyl\Core\AbstractIdentifiable;
 use Vainyl\Operation\OperationInterface;

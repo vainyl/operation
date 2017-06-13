@@ -10,7 +10,7 @@
  */
 declare(strict_types=1);
 
-namespace Vainyl\Operation\Collection\Decorator;
+namespace Vainyl\Operation\Decorator;
 
 use Vainyl\Core\ResultInterface;
 use Vainyl\Operation\OperationInterface;

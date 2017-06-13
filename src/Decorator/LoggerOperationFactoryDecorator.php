@@ -10,10 +10,10 @@
  */
 declare(strict_types=1);
 
-namespace Vainyl\Operation\Collection\Decorator;
+namespace Vainyl\Operation\Decorator;
 
 use Psr\Log\LoggerInterface;
-use Vainyl\Operation\Collection\Factory\OperationFactoryInterface;
+use Vainyl\Operation\Factory\OperationFactoryInterface;
 use Vainyl\Operation\OperationInterface;
 
 /**
