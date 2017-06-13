@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Vainyl\\Redis\\": "src/"
+            "Vainyl\\Operation\\": "src/"
         }
     },
     "require": {
