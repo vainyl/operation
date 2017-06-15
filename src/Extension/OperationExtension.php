@@ -21,11 +21,4 @@ use Vainyl\Core\Extension\AbstractFrameworkExtension;
  */
 class OperationExtension extends AbstractFrameworkExtension
 {
-    /**
-     * @inheritDoc
-     */
-    public function getCompilerPasses(): array
-    {
-        return [];
-    }
 }
