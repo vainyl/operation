@@ -12,14 +12,14 @@ declare(strict_types=1);
 
 namespace Vainyl\Operation\Extension;
 
-use Vainyl\Core\Extension\AbstractExtension;
+use Vainyl\Core\Extension\AbstractFrameworkExtension;
 
 /**
  * Class OperationExtension
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-class OperationExtension extends AbstractExtension
+class OperationExtension extends AbstractFrameworkExtension
 {
     /**
      * @inheritDoc
