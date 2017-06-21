@@ -42,7 +42,7 @@ class SequenceCollectionFactory implements CollectionFactoryInterface
     {
         $storage = clone $this->storage;
         foreach ($operations as $operation) {
-            $this->storage[] = $operation;
+            $storage[] = $operation;
         }
 
         return new OperationSequence($storage);
