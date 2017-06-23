@@ -9,11 +9,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "Vainyl\\Redis\\": "src/"
+            "Vainyl\\Operation\\": "src/"
         }
     },
     "require": {
-        "vainyl/core": "dev-master"
+        "vainyl/core": "0.1.x-dev"
     },
     "repositories": [
         {

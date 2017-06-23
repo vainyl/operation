@@ -21,7 +21,7 @@ use Vainyl\Operation\Collection\Factory\CollectionFactoryInterface;
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-class LoggerCollectionDecoratorFactory extends AbstractCollectionFactoryDecorator
+class LoggerCollectionFactoryDecorator extends AbstractCollectionFactoryDecorator
 {
     private $logger;
 

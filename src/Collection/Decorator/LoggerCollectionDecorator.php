@@ -23,7 +23,6 @@ use Vainyl\Operation\Collection\CollectionInterface;
  */
 class LoggerCollectionDecorator extends AbstractCollectionDecorator
 {
-
     private $logger;
 
     /**
@@ -43,12 +42,18 @@ class LoggerCollectionDecorator extends AbstractCollectionDecorator
      */
     public function execute(): ResultInterface
     {
-        $this->logger->debug('Preparing to execute collection %s', $this->getId());
+        $this->logger->debug(
+            sprintf('Preparing to execute collection %s with id %s', $this->getName(), $this->getId())
+        );
         $result = parent::execute();
         if ($result->isSuccessful()) {
-            $this->logger->debug('Successfully executed collection %s', $this->getId());
+            $this->logger->debug(
+                sprintf('Successfully executed collection %s with id %s ', $this->getName(), $this->getId())
+            );
         } else {
-            $this->logger->debug('Failed to execute collection %s', $this->getId());
+            $this->logger->debug(
+                sprintf('Failed to execute collection %s with id %s', $this->getName(), $this->getId())
+            );
         }
 
         return $result;
