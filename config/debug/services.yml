@@ -1,5 +1,5 @@
 imports:
-  - { resource: '../di.yml' }
+  - { resource: '../services.yml' }
 
 services:
   collection.factory.set.logger:
