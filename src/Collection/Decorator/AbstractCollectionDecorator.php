@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Vainyl\Operation\Collection\Decorator;
 
+use Vainyl\Core\AbstractIdentifiable;
 use Vainyl\Core\ResultInterface;
 use Vainyl\Operation\Collection\CollectionInterface;
 use Vainyl\Operation\OperationInterface;
@@ -21,7 +22,7 @@ use Vainyl\Operation\OperationInterface;
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-abstract class AbstractCollectionDecorator implements CollectionInterface
+abstract class AbstractCollectionDecorator extends AbstractIdentifiable implements CollectionInterface
 {
     private $collection;
 
@@ -51,14 +52,6 @@ abstract class AbstractCollectionDecorator implements CollectionInterface
         $this->collection->add($operation);
 
         return $this;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function getId(): string
-    {
-        return $this->collection->getId();
     }
 
     /**
