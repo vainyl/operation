@@ -24,12 +24,12 @@ interface CollectionInterface extends OperationInterface
     /**
      * @return \Traversable
      */
-    public function getOperations() : \Traversable;
+    public function getOperations(): \Traversable;
 
     /**
      * @param OperationInterface $operation
      *
      * @return CollectionInterface
      */
-    public function add(OperationInterface $operation) : CollectionInterface;
+    public function add(OperationInterface $operation): CollectionInterface;
 }

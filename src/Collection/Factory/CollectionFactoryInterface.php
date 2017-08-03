@@ -27,5 +27,5 @@ interface CollectionFactoryInterface
      *
      * @return CollectionInterface
      */
-    public function create(array $operations = []) : CollectionInterface;
+    public function create(array $operations = []): CollectionInterface;
 }

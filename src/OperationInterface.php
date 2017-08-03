@@ -25,5 +25,5 @@ interface OperationInterface extends NameableInterface
     /**
      * @return ResultInterface
      */
-    public function execute() : ResultInterface;
+    public function execute(): ResultInterface;
 }

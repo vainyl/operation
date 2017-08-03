@@ -48,7 +48,7 @@ abstract class AbstractCollection extends AbstractIdentifiable implements Collec
     /**
      * @inheritDoc
      */
-    public function getOperations() : \Traversable
+    public function getOperations(): \Traversable
     {
         return $this->storage->getIterator();
     }

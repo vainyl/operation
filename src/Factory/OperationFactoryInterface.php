@@ -27,5 +27,5 @@ interface OperationFactoryInterface extends IdentifiableInterface
      *
      * @return OperationInterface
      */
-    public function decorate(OperationInterface $operation) : OperationInterface;
+    public function decorate(OperationInterface $operation): OperationInterface;
 }
