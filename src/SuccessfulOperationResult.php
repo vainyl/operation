@@ -21,7 +21,6 @@ use Vainyl\Core\AbstractSuccessfulResult;
  */
 class SuccessfulOperationResult extends AbstractSuccessfulResult
 {
-
     private $operation;
 
     /**

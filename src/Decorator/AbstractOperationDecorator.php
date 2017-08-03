@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Vainyl\Operation\Decorator;
 
+use Vainyl\Core\AbstractIdentifiable;
 use Vainyl\Core\ResultInterface;
 use Vainyl\Operation\OperationInterface;
 
@@ -20,7 +21,7 @@ use Vainyl\Operation\OperationInterface;
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-abstract class AbstractOperationDecorator implements OperationInterface
+abstract class AbstractOperationDecorator extends AbstractIdentifiable implements OperationInterface
 {
     private $operation;
 
@@ -32,14 +33,6 @@ abstract class AbstractOperationDecorator implements OperationInterface
     public function __construct(OperationInterface $operation)
     {
         $this->operation = $operation;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function getId(): string
-    {
-        return $this->operation->getId();
     }
 
     /**
