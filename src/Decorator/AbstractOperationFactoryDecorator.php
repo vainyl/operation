@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Vainyl\Operation\Decorator;
 
+use Vainyl\Core\AbstractIdentifiable;
 use Vainyl\Operation\Factory\OperationFactoryInterface;
 use Vainyl\Operation\OperationInterface;
 
@@ -20,7 +21,7 @@ use Vainyl\Operation\OperationInterface;
  *
  * @author Taras P. Girnyk <taras.p.gyrnik@gmail.com>
  */
-abstract class AbstractOperationFactoryDecorator implements OperationFactoryInterface
+abstract class AbstractOperationFactoryDecorator extends AbstractIdentifiable implements OperationFactoryInterface
 {
     private $operationFactory;
 
@@ -32,14 +33,6 @@ abstract class AbstractOperationFactoryDecorator implements OperationFactoryInte
     public function __construct(OperationFactoryInterface $operationFactory)
     {
         $this->operationFactory = $operationFactory;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function getId(): string
-    {
-        return $this->operationFactory->getId();
     }
 
     /**
