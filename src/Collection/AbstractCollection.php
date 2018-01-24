@@ -58,6 +58,6 @@ abstract class AbstractCollection extends AbstractIdentifiable implements Collec
      */
     public function getName(): string
     {
-        return $this->getId();
+        return static::class;
     }
 }
